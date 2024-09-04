@@ -1,0 +1,52 @@
+/* General styles */
+body {
+    background-color: #f3f4f6;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Card styling */
+.card {
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 2.5rem;
+}
+
+/* Color box styling */
+.color-box {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    border-radius: 15px;
+    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.2), inset -10px -10px 20px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+}
+
+/* Form styling */
+.form-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #6200ea;
+}
+
+input[type="color"] {
+    height: 50px;
+    padding: 0;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background: linear-gradient(145deg, #ffffff, #e6e
+

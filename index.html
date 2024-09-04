@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Picker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">RGB Color Picker</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-4">
+                                <label for="colorPicker" class="form-label">Pick a Color</label>
+                                <input type="color" class="form-control form-control-color shadow-lg" id="colorPicker" value="#000000">
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-md-4">
+                                    <label for="redRange" class="form-label">Red</label>
+                                    <input type="range" class="form-range" id="redRange" min="0" max="255" value="0">
+                                    <input type="number" class="form-control mt-2" id="redInput" min="0" max="255" value="0">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="greenRange" class="form-label">Green</label>
+                                    <input type="range" class="form-range" id="greenRange" min="0" max="255" value="0">
+                                    <input type="number" class="form-control mt-2" id="greenInput" min="0" max="255" value="0">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="blueRange" class="form-label">Blue</label>
+                                    <input type="range" class="form-range" id="blueRange" min="0" max="255" value="0">
+                                    <input type="number" class="form-control mt-2" id="blueInput" min="0" max="255" value="0">
+                                </div>
+                            </div>
+                        </form>
+                        <div id="colorBox" class="color-box mb-3"></div>
+                        <p class="text-center fw-bold">Hex Code: <span id="hexCode" class="badge bg-dark text-light p-2">#000000</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
